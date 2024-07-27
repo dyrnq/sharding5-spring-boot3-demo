@@ -1,0 +1,13 @@
+#spring:
+#  shardingsphere:
+#    datasource:
+#      names: ds0
+#      ds0:
+##        type: com.zaxxer.hikari.HikariDataSource
+#        type: com.alibaba.druid.pool.DruidDataSource
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+##        jdbc-url: jdbc:mysql://10.0.200.84:3306/zt_ques?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+#        url: jdbc:mysql://10.0.200.84:9327/zt_ques?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+#        username: zt_ques
+#        password: RLw*qhNC3ms_C^
+
