@@ -3,10 +3,8 @@ import com.company.modules.demo.dao.OrderDao;
 import com.company.modules.demo.dao.UserInfoDao;
 import com.company.modules.demo.model.Order;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 
 @SpringBootTest(classes = com.company.MainApplication.class)
