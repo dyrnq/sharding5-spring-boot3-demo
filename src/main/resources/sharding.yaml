@@ -1,22 +1,22 @@
 mode:
   type: Standalone
-  repository:
-    type: JDBC
+#  repository:
+#    type: JDBC
 
 
 dataSources:
   ds_420100:
     dataSourceClassName: com.zaxxer.hikari.HikariDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    jdbcUrl: jdbc:mysql://127.0.0.1:3380/db_420100?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    jdbcUrl: jdbc:mysql://192.168.88.131:3306/db_420100?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
-    password: 123456
+    password: 666666
   ds_420200:
     dataSourceClassName: com.zaxxer.hikari.HikariDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    jdbcUrl: jdbc:mysql://127.0.0.1:3380/db_420200?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    jdbcUrl: jdbc:mysql://192.168.88.131:3306/db_420200?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
-    password: 123456
+    password: 666666
 
 
 rules:
