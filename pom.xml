@@ -16,7 +16,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+<!--        <java.version>1.8</java.version>-->
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mysql.version>8.0.30</mysql.version>
         <quartz.version>2.3.0</quartz.version>
         <lombok.version>1.18.30</lombok.version>
