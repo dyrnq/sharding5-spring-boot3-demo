@@ -10,7 +10,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.6</version>
+        <version>3.4.0</version>
     </parent>
 
     <properties>
@@ -20,14 +20,14 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mysql.version>8.0.30</mysql.version>
+<!--        <mysql.version>8.0.30</mysql.version>-->
         <quartz.version>2.3.0</quartz.version>
-        <lombok.version>1.18.30</lombok.version>
+<!--        <lombok.version>1.18.30</lombok.version>-->
         <joda.time.version>2.9.9</joda.time.version>
-        <mybatis-plus-boot-starter.version>3.5.6</mybatis-plus-boot-starter.version>
-        <mybatis-spring.version>3.0.3</mybatis-spring.version>
-        <snakeyaml.version>1.33</snakeyaml.version>
-        <mysql-connector-java.version>8.0.17</mysql-connector-java.version>
+        <mybatis-plus-boot-starter.version>3.5.9</mybatis-plus-boot-starter.version>
+        <mybatis-spring.version>3.0.4</mybatis-spring.version>
+<!--        <snakeyaml.version>1.33</snakeyaml.version>-->
+<!--        <mysql-connector-java.version>8.0.17</mysql-connector-java.version>-->
         <springdoc-openapi-starter-webmvc-api.version>2.2.0</springdoc-openapi-starter-webmvc-api.version>
         <knife4j-openapi3-jakarta-spring-boot-starter.version>4.5.0</knife4j-openapi3-jakarta-spring-boot-starter.version>
         <swagger-annotations.version>2.2.22</swagger-annotations.version>
@@ -111,7 +111,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
+<!--            <version>${lombok.version}</version>-->
         </dependency>
 
 
@@ -119,13 +119,18 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatis-plus-boot-starter.version}</version>
-
             <exclusions>
                 <exclusion>
                     <artifactId>mybatis-spring</artifactId>
                     <groupId>org.mybatis</groupId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-jsqlparser</artifactId>
+            <version>${mybatis-plus-boot-starter.version}</version>
         </dependency>
 
         <dependency>
@@ -136,19 +141,22 @@
 
 
         <!-- 如果不引入,shardingsphere内置依赖的yaml版本过低,启动会报错 -->
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>${snakeyaml.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.yaml</groupId>-->
+<!--            <artifactId>snakeyaml</artifactId>-->
+<!--            <version>${snakeyaml.version}</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>${mysql-connector-java.version}</version>-->
+<!--        </dependency>-->
 
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql-connector-java.version}</version>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
         </dependency>
-
-
         <!--添加Springdoc依赖-->
         <dependency>
             <groupId>org.springdoc</groupId>
@@ -207,7 +215,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <fork>true</fork>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
                 </configuration>
             </plugin>
             <!-- 跳过单元测试 -->
