@@ -24,7 +24,7 @@
         <quartz.version>2.3.0</quartz.version>
         <lombok.version>1.18.30</lombok.version>
         <joda.time.version>2.9.9</joda.time.version>
-        <mybatis-plus-boot-starter.version>3.5.6</mybatis-plus-boot-starter.version>
+        <mybatis-plus-boot-starter.version>3.5.9</mybatis-plus-boot-starter.version>
         <mybatis-spring.version>3.0.3</mybatis-spring.version>
         <snakeyaml.version>1.33</snakeyaml.version>
         <mysql-connector-java.version>8.0.17</mysql-connector-java.version>
