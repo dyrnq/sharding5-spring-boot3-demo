@@ -17,9 +17,9 @@ create table t_user
 create table t_order_202407
 (
     `id`     bigint(20) NOT NULL AUTO_INCREMENT,
-    `name`   varchar(50),
+    `user_id` bigint(20),
+    `order_num`  bigint(20),
     `create_time` datetime,
-    `snow_id` bigint(20),
     `city_code` varchar(50),
     PRIMARY KEY (`id`)
 );
@@ -49,9 +49,9 @@ create table t_user
 create table t_order_202407
 (
     `id`     bigint(20) NOT NULL AUTO_INCREMENT,
-    `name`   varchar(50),
+    `user_id` bigint(20),
+    `order_num`  bigint(20),
     `create_time` datetime,
-    `snow_id` bigint(20),
     `city_code` varchar(50),
     PRIMARY KEY (`id`)
 );
