@@ -35,7 +35,7 @@
         <shardingsphere-jdbc-core.version>5.4.1</shardingsphere-jdbc-core.version>
         <jaxb-api.version>2.3.0</jaxb-api.version>
         <jaxb-impl.version>2.3.0</jaxb-impl.version>
-        <jaxb-core.version>2.3.0</jaxb-core.version>
+        <jaxb-core.version>2.3.0.1</jaxb-core.version>
     </properties>
 
     <dependencies>
