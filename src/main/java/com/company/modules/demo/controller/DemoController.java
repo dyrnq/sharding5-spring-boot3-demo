@@ -92,11 +92,11 @@ public class DemoController {
         userInfoDao.insert(userInfo2);
 
         String time1 = "2024-08-01";
-        Order order1 = new Order(null, 1, TimeUtils.string2Date(time1), 1L, "420200");
+        Order order1 = new Order(null, 1L, TimeUtils.string2Date(time1), 1L, "420200");
         orderDao.insert(order1);
 
         String time2 = "2024-07-01";
-        Order order2 = new Order(null, 1, TimeUtils.string2Date(time2), 1L, "420100");
+        Order order2 = new Order(null, 1L, TimeUtils.string2Date(time2), 1L, "420100");
         orderDao.insert(order2);
 
         return Result.OK();

@@ -20,7 +20,7 @@ public class Order {
     private Long id;
 
     @TableField(value = "user_id")
-    private int userId;
+    private Long userId;
 
     @TableField(value = "create_time")
     private Date createTime;
