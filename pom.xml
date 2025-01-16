@@ -30,7 +30,7 @@
 <!--        <mysql-connector-java.version>8.0.17</mysql-connector-java.version>-->
         <springdoc-openapi-starter-webmvc-api.version>2.2.0</springdoc-openapi-starter-webmvc-api.version>
         <knife4j-openapi3-jakarta-spring-boot-starter.version>4.5.0</knife4j-openapi3-jakarta-spring-boot-starter.version>
-        <swagger-annotations.version>2.2.22</swagger-annotations.version>
+        <swagger-annotations.version>2.2.28</swagger-annotations.version>
 <!--        <activation.version>1.1.1</activation.version>-->
         <shardingsphere-jdbc-core.version>5.5.1</shardingsphere-jdbc-core.version>
 <!--        <jaxb-api.version>2.3.0</jaxb-api.version>-->
